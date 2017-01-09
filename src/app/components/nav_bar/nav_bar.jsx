@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, hashHistory } from 'react-router';
-// require('./styles.css');
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -17,8 +16,8 @@ class NavBar extends React.Component {
             </div>
             <ul className="nav navbar-nav">
               <li><a href="#">Home</a></li>
-              <li><a href="#">Questions</a></li>
-              <li><a href="#">Underwriter Assignments</a></li>
+              <li><Link to={'/questions'}>change</Link></li>
+              <li><Link to={'/assignments'}>Underwriter Assignments</Link></li>
             </ul>
             <form className="navbar-form navbar-left">
               <div className="input-group">
