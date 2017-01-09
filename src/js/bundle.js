@@ -32861,16 +32861,20 @@
 	
 	var _questions2 = _interopRequireDefault(_questions);
 	
+	var _assignments = __webpack_require__(287);
+	
+	var _assignments2 = _interopRequireDefault(_assignments);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	//CSS
-	
-	
-	//Components
 	__webpack_require__(284);
 	
-	//Routes for React-Router
+	//Components
 	//Dependencies
+	
+	
+	//Routes for React-Router
 	var Root = function Root(_ref) {
 	  var store = _ref.store;
 	  return _react2.default.createElement(
@@ -32882,7 +32886,8 @@
 	      _react2.default.createElement(
 	        _reactRouter.Route,
 	        { path: '/', component: _nav_bar2.default },
-	        _react2.default.createElement(_reactRouter.Route, { path: '/questions', component: _questions2.default })
+	        _react2.default.createElement(_reactRouter.Route, { path: '/questions', component: _questions2.default }),
+	        _react2.default.createElement(_reactRouter.Route, { path: '/assignments', component: _assignments2.default })
 	      )
 	    )
 	  );
@@ -39031,7 +39036,7 @@
 /* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 	
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
@@ -39042,8 +39047,6 @@
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactRouter = __webpack_require__(221);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -39063,120 +39066,120 @@
 	  }
 	
 	  _createClass(Questions, [{
-	    key: 'render',
+	    key: "render",
 	    value: function render() {
 	      return _react2.default.createElement(
-	        'div',
-	        { className: 'container' },
+	        "div",
+	        { className: "container" },
 	        _react2.default.createElement(
-	          'h2',
+	          "h2",
 	          null,
-	          'Question List'
+	          "Question List"
 	        ),
 	        _react2.default.createElement(
-	          'table',
-	          { className: 'table' },
+	          "table",
+	          { className: "table" },
 	          _react2.default.createElement(
-	            'thead',
+	            "thead",
 	            null,
 	            _react2.default.createElement(
-	              'tr',
+	              "tr",
 	              null,
 	              _react2.default.createElement(
-	                'th',
+	                "th",
 	                null,
-	                'Question Id'
+	                "Question Id"
 	              ),
 	              _react2.default.createElement(
-	                'th',
+	                "th",
 	                null,
-	                'Question Type'
+	                "Question Type"
 	              ),
 	              _react2.default.createElement(
-	                'th',
+	                "th",
 	                null,
-	                'Question Text'
+	                "Question Text"
 	              ),
 	              _react2.default.createElement(
-	                'th',
+	                "th",
 	                null,
-	                'Response'
+	                "Response"
 	              )
 	            )
 	          ),
 	          _react2.default.createElement(
-	            'tbody',
+	            "tbody",
 	            null,
 	            _react2.default.createElement(
-	              'tr',
+	              "tr",
 	              null,
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Q1'
+	                "Q1"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Type1'
+	                "Type1"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Text1'
+	                "Text1"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'R1'
+	                "R1"
 	              )
 	            ),
 	            _react2.default.createElement(
-	              'tr',
+	              "tr",
 	              null,
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Q2'
+	                "Q2"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Type2'
+	                "Type2"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Text2'
+	                "Text2"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'R2'
+	                "R2"
 	              )
 	            ),
 	            _react2.default.createElement(
-	              'tr',
+	              "tr",
 	              null,
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Q3'
+	                "Q3"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Type3'
+	                "Type3"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'Text3'
+	                "Text3"
 	              ),
 	              _react2.default.createElement(
-	                'td',
+	                "td",
 	                null,
-	                'R3'
+	                "R3"
 	              )
 	            )
 	          )
@@ -39189,6 +39192,56 @@
 	}(_react2.default.Component);
 	
 	exports.default = Questions;
+
+/***/ },
+/* 287 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var Assignments = function (_React$Component) {
+	  _inherits(Assignments, _React$Component);
+	
+	  function Assignments(props) {
+	    _classCallCheck(this, Assignments);
+	
+	    return _possibleConstructorReturn(this, (Assignments.__proto__ || Object.getPrototypeOf(Assignments)).call(this, props));
+	  }
+	
+	  _createClass(Assignments, [{
+	    key: 'render',
+	    value: function render() {
+	      console.log('hellow there');
+	      return _react2.default.createElement(
+	        'div',
+	        null,
+	        'hello from assignments'
+	      );
+	    }
+	  }]);
+	
+	  return Assignments;
+	}(_react2.default.Component);
+	
+	exports.default = Assignments;
 
 /***/ }
 /******/ ]);

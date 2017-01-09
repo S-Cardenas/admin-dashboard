@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router';
 
 class Questions extends React.Component {
   constructor(props) {
