@@ -32,6 +32,7 @@ class NavBar extends React.Component {
             </form>
           </div>
         </nav>
+        {this.props.children}
       </div>
     );
   }
