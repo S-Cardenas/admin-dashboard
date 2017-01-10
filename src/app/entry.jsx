@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 //Load jQuery from node_modules
 window.jQuery = window.$ = require('jquery');
-
+window.stefan = 'stefan';
 //Store and Root Component
 import configureStore from './store/store';
 import Root from './components/root';

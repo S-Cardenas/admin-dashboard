@@ -1,5 +1,5 @@
-const path = require("path");
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+let path = require("path");
+let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   context: __dirname,
@@ -12,24 +12,24 @@ module.exports = {
     loaders: [
       {
         test: [/\.jsx?$/, /\.js?$/],
-        exclude: /(node_modules|bower_components)/,
+        exclude: /(node_modules)/,
         loader: 'babel',
         query: {
           presets: ['es2015', 'react']
         }
       },
       {
-        test: /\.css/,
-        loader: ExtractTextPlugin.extract("css")
+        test: /\.s?css$/,
+        loader: ExtractTextPlugin.extract('style', 'css!sass')
       }
     ]
   },
   plugins: [
-    new ExtractTextPlugin("css/styles.css")
+    new ExtractTextPlugin("css/styles.css", { allChunks: true })
   ],
   devtool: 'source-maps',
   resolve: {
-    extensions: ["", ".js", ".jsx" ]
+    extensions: ["", ".js", ".jsx", ".css", ".scss"]
   },
   watch: true
 };

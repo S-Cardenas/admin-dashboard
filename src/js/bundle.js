@@ -65,8 +65,8 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	//Load jQuery from node_modules
-	window.jQuery = window.$ = __webpack_require__(280);
-	
+	window.jQuery = window.$ = __webpack_require__(278);
+	window.stefan = 'stefan';
 	//Store and Root Component
 	
 	
@@ -29118,9 +29118,7 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ },
-/* 278 */,
-/* 279 */,
-/* 280 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
